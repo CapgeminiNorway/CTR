@@ -2,7 +2,7 @@
 // @name         New Userscript
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  fix table styles
+// @description  fix table styles in CTR-> Week
 // @author       Erland
 // @match        https://apps.ne.capgemini.com/Applications/CTR/
 // @grant        none
