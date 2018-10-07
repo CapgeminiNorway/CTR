@@ -2,7 +2,7 @@
 // @name         CTR Userscript
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
+// @description  fix dropdowns in CTR-> My Reports
 // @author       Erland
 // @match        https://apps.ne.capgemini.com/Applications/CTR/
 // @grant        none
