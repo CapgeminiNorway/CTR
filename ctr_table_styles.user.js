@@ -7,6 +7,7 @@
 // @match        https://apps.ne.capgemini.com/Applications/CTR/
 // @match        https://apps.ne.capgemini.com/applications/CTR/
 // @match        https://apps-x.nordic.capgemini.com/applications/CTR/
+// @match        https://apps.ne.capgemini.com/Applications//CTR/
 // @grant        none
 // ==/UserScript==
 
