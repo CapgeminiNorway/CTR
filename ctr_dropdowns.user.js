@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         CTR style
+// @name         CTR Userscript
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  fix table styles in CTR-> Week
+// @description  fix dropdowns in CTR-> My Reports
 // @author       Erland
 // @match        https://apps.ne.capgemini.com/Applications/CTR/
 // @match        https://apps.ne.capgemini.com/Applications/ctr/
@@ -15,12 +15,17 @@
 // @match        https://apps.ne.capgemini.com/Applications//CTR/
 // @match        https://apps.ne.capgemini.com/Applications//ctr/
 // @grant        none
-// ==/UserScript==
-var frames = document.getElementsByName("FrameMain");
-frames.forEach(function(myFrame){
-    var myFrameContent = (myFrame.contentWindow || myFrame.contentDocument);
-    myFrame.addEventListener("load", function(event){
-        myFrameContent.document.head.innerHTML = myFrameContent.document.head.innerHTML + '<style>tr[style*="display: block;"]{display:table-row !important}</style>';
-    });
-});
 
+// ==/UserScript==
+window.onload = function() {
+    var frames = document.getElementsByName("FrameMain");
+    frames.forEach(function(myFrame){
+        var myFrameContent = (myFrame.contentWindow || myFrame.contentDocument);
+        var buttons = myFrameContent.document.body.querySelectorAll("button.fieldtxt3");
+        buttons.forEach(function(element){
+            element.addEventListener("click", function(event){
+                event.preventDefault();
+            });
+        });
+    });
+}
