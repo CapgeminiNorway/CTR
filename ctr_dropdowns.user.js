@@ -5,9 +5,15 @@
 // @description  fix dropdowns in CTR-> My Reports
 // @author       Erland
 // @match        https://apps.ne.capgemini.com/Applications/CTR/
+// @match        https://apps.ne.capgemini.com/Applications/ctr/
 // @match        https://apps.ne.capgemini.com/applications/CTR/
+// @match        https://apps.ne.capgemini.com/applications/ctr/
+// @match        https://apps-x.nordic.capgemini.com/Applications/CTR/
+// @match        https://apps-x.nordic.capgemini.com/Applications/ctr/
 // @match        https://apps-x.nordic.capgemini.com/applications/CTR/
+// @match        https://apps-x.nordic.capgemini.com/applications/ctr/
 // @match        https://apps.ne.capgemini.com/Applications//CTR/
+// @match        https://apps.ne.capgemini.com/Applications//ctr/
 // @grant        none
 
 // ==/UserScript==
